@@ -12,7 +12,11 @@
     <ion-card-header>
       Explore Nearby
     </ion-card-header>
-
+    <ion-list inset>
+      <button ion-item *ngFor="let item of items" (click)="itemSelect(item)">
+        {{ item }}
+      </button>
+    </ion-list>
     <ion-list>
       <button ion-item>
         <ion-icon name="logo-youtube" item-start></ion-icon>
