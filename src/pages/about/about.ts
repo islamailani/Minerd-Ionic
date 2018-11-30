@@ -22,7 +22,7 @@ export class AboutPage {
   showAlert() {
     const alert = this.alertCtrl.create({
       title: 'Proximamente',
-      subTitle: 'Aun estamos implementando esta opcion, proximamente sera utilizable.',
+      subTitle: 'Aun no esta disponible esta opcion, disculpe los inconvenientes.',
       buttons: ['OK']
     });
     alert.present();

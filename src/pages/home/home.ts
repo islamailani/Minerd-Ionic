@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
-import { VideosPage } from '../videos/videos';
 
 
 
@@ -10,36 +8,10 @@ import { VideosPage } from '../videos/videos';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  items = [
-    'Español Basico',
-    'Español Intermedio',
-    'Español Intenso',
-    'Encuentra personas en Linea',
-    'Encuentra Lugares para practicar'
-  ];
 
-  constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
+
+  constructor(public navCtrl: NavController) {
 
   }
-  showAlert() {
-    const alert = this.alertCtrl.create({
-      title: 'Proximamente',
-      subTitle: 'Aun estamos implementando esta opcion, proximamente sera utilizable.',
-      buttons: ['OK']
-    });
-    alert.present();
-  }
-  itemSelect(item: String){
-    if(item=='Español Basico'){
-      this.navCtrl.push(VideosPage);
-    }else if(item=='Español Intermedio'){
-      this.showAlert();
-    }else if(item=='Español Intenso'){
-      this.showAlert();
-    }else if(item=='Encuentra personas en Linea'){
-      this.showAlert();
-    }else if(item=='Encuentra Lugares para practicar'){
-      this.showAlert();
-    }
-  }1084
+
 }

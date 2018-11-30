@@ -12,38 +12,33 @@
     <ion-card-header>
       Explore Nearby
     </ion-card-header>
-    <ion-list inset>
-      <button ion-item *ngFor="let item of items" (click)="itemSelect(item)">
-        {{ item }}
-      </button>
-    </ion-list>
     <ion-list>
-      <button ion-item>
+      <button ion-item (click)="itemSelect('Español Basico')">
         <ion-icon name="logo-youtube" item-start></ion-icon>
         Videos of learning
       </button>
 
-      <button ion-item>
+      <button ion-item (click)="itemSelect('Español Intermedio')">
         <ion-icon name="ios-body" item-start></ion-icon>
         Parts of Body
       </button>
 
-      <button ion-item>
+      <button ion-item (click)="itemSelect('Español Intermedio')">
         <ion-icon name="ios-pizza" item-start></ion-icon>
         Food
       </button>
 
-      <button ion-item>
+      <button ion-item (click)="itemSelect('Español Intermedio')">
         <ion-icon name="paw" item-start></ion-icon>
         Animals
       </button>
 
-      <button ion-item>
+      <button ion-item (click)="itemSelect('Español Intermedio')">
         <ion-icon name="ios-american-football" item-start></ion-icon>
         Sports
       </button>
 
-      <button ion-item>
+      <button ion-item (click)="itemSelect('Español Basico')">
         <ion-icon name="planet" item-start></ion-icon>
         Planets and space
       </button>
